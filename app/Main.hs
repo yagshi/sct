@@ -9,3 +9,5 @@ main :: IO ()
 main = scotty 3000 $ do
   get "/" $ do
     text "Scotty, beam me up!"
+  get "/hello" $ do
+    text "world"
